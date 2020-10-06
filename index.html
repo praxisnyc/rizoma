@@ -11,27 +11,32 @@
 <body>
 	<div class="container">
 		<h1>Rizoma</h1>
-		<h2>Consultoria de tecnologias rizomáticas para grupos periféricos</h2>
-
-		<p>Tecnologia rizomática, explicar</p>
-		<p>soberania de dados</p>
-		<ul>
-			<li>Mais informação:</li>
-			<li><a href="https://pt.wikipedia.org/wiki/Rizoma_(filosofia)">Rizoma (portugês, wikipedia)</a></li>
-			<li><a href="https://cdn.auckland.ac.nz/assets/psych/about/our-research/documents/TMR%2BMāori%2BData%2BSovereignty%2BPrinciples%2BOct%2B2018.pdf">Principles of Māori Data Sovereignty</a> (inglês, PDF)</li>
-			<li><a href="https://sur.conectas.org/en/digital-sovereignty-or-digital-colonialism/">Digital sovereignty or digital colonialism?</a> (inglês, artigo)</li>
-		</ul>
-		<p>Possimus est modi laboriosam voluptatibus minus reprehenderit excepturi. Ut, necessitatibus?</p>
-		<p>Ullam, accusamus, eos reiciendis error nobis distinctio a esse. Esse?</p>
-		<p>In, voluptas minus laudantium, natus veniam dolores sequi quaerat dolorem.</p>
-		<p>Nulla optio deleniti deserunt ullam? Laboriosam, soluta quos ut voluptatibus?</p>
-		<p>Magni harum nemo sapiente molestias tempore fugit omnis sit quibusdam?</p>
-		<p>Nisi corporis minus autem, nihil libero soluta facere odit dolorum.</p>
-		<p>Voluptatem quod corporis eligendi in aut perferendis modi error, libero.</p>
-		<p>Voluptates harum sit libero quibusdam magnam, veniam soluta fugit saepe.</p>
-		<p>Expedita laboriosam id molestias fuga dolorum consequuntur ut nobis placeat.</p>
-			<h3>autonomia e soberania de dados</h3>
+		<!-- <h2>Consultoria de tecnologias rizomáticas para grupos periféricos</h2> -->
+<h3>Somos um grupo de tecnologistas e humanistas auxiliando grupos periféricos a evadir o <a href="https://www.projetodraft.com/verbete-draft-o-que-e-capitalismo-de-vigilancia/" data-toggle="popover" data-html="true" data-content="<p>o modelo econômico que usa os dados de usuários como matéria-prima para predição de comportamento por empresas de tecnologias financeiras</p><p class='cta'>clique para ler artigo</p>">capitalismo de vigilância</a>
+ e estabelecer sua <a href="https://www.scielo.br/scielo.php?script=sci_arttext&pid=S0102-311X2018001008001" data-toggle="popover" data-html="true" data-content="<p>[pegar definição]</p><p class='cta'>clique para ler uma resenha</p>">soberania digital</a> por meio de <a href="https://pt.wikipedia.org/wiki/Rizoma_(filosofia)" data-toggle="popover" data-html="true" data-content="<p>[pegar definição]</p><p class='cta'>clique para saber mais no wikipedia</p>">tecnologias rizomáticas</a>.</h3>
+	<p>[metodologia]</p>
+	<p>[nossa proficiencia]</p>
+	<p>[acao]</p>
 	</div>
-	
+		<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+    .on("mouseenter", function () {
+      var _this = this;
+      $(this).popover("show");
+      $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+      });
+    }).on("mouseleave", function () {
+      var _this = this;
+      setTimeout(function () {
+        if (!$(".popover:hover").length) {
+          $(_this).popover("hide");
+        }
+      }, 300);
+    });
+    </script>
 </body>
 </html>
